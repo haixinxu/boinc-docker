@@ -3,7 +3,7 @@ FROM debian:testing
   
 RUN apt update  
 RUN apt upgrade -y  
-RUN apt install boinc boinc-manager  
+RUN apt install boinc boinc-manager -y 
 RUN apt clean  
   
 USER boinc  
