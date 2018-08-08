@@ -9,4 +9,4 @@ RUN apt clean
 USER boinc  
 ENV USER=boinc  
   
-CMD ["sh","-c","boinc& ; boinccmd --join_acct_mgr $MGR_URL $MGR_USER $MGR_PASS"] 
+CMD ["sh","-c","boinc& && boinccmd --join_acct_mgr $MGR_URL $MGR_USER $MGR_PASS"] 
